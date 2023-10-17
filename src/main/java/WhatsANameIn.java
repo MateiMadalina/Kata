@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WhatsANameIn {
+    public static void main(String[] args) {
+        System.out.println(nameInStr("v", "Madalina"));
+    }
     public static boolean nameInStr(String str, String name){
         List<Character> letters = new ArrayList<Character>();
         for (Character c : str.toCharArray()) {

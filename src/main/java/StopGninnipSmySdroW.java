@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class StopGninnipSmySdroW {
     public static void main(String[] args) {
         System.out.println(spinWords("Hey fellow warriors"));

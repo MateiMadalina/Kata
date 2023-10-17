@@ -1,6 +1,6 @@
 public class FindTheOddInt {
     public static void main(String[] args) {
-
+        System.out.println(findIt(new int[]{2,2,3,3,3,5,5,1,1}));
     }
     public static int findIt(int[] a) {
         int countOcurence = 0;
