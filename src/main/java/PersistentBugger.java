@@ -4,15 +4,18 @@ public class PersistentBugger {
     }
 
     private static int persistence(long n) {
-        if (n < 10) {
-            return 0;
+        int steps = 0;
+
+        while (n >= 10) {
+            long result = 1;
+            while (n > 0) {
+                result = result * (n % 10);
+                n /= 10;
+            }
+            n = result;
+            steps++;
         }
-        long result = 1;
-        while (n > 0) {
-            long digit = n % 10;
-            result *= digit;
-            n /= 10;
-        }
-        return 1 + persistence(result);
+
+        return steps;
     }
 }
