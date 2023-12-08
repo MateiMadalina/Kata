@@ -20,6 +20,7 @@ public class ValidBraces {
 
                 char top = stack.pop();
                 System.out.println(top + "top");
+                System.out.println(stack + "stack");
 
                 if (brace == ')' && top != '(') {
                     return false;
