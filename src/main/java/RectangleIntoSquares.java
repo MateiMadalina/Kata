@@ -7,6 +7,7 @@ public class RectangleIntoSquares {
     }
     public static List<Integer> sqInRect(int lng, int wdth) {
         List<Integer> sizesOfTheSquares = new ArrayList<>();
+
         while(lng != wdth){
             if(lng > wdth){
                 lng = lng - wdth;
@@ -16,6 +17,7 @@ public class RectangleIntoSquares {
                 sizesOfTheSquares.add(lng);
             }
         }
+
         if(sizesOfTheSquares.size()>0){
             sizesOfTheSquares.add(lng);
             return sizesOfTheSquares;
